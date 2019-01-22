@@ -3,26 +3,26 @@
   padding: 0;
   }
 
-  .von
+  .nave
   {
     float:left;
     width: 100vw;
     height: 10vh;
     font-size: 3vh
   }
-  .von a
+  .nave a
   {
     color:black;
     text-decoration: none;
     padding: 14.7vw;
   }
 
-  .von a:hover
+  .nave a:hover
   {
     color:grey;
   }
 
-  .von a:active
+  .nave a:active
   {
     color: white;
   }
