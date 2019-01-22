@@ -3,4 +3,26 @@
   padding: 0;
   }
 
-  
+  .von
+  {
+    float:left;
+    width: 100vw;
+    height: 10vh;
+    font-size: 3vh
+  }
+  .von a
+  {
+    color:black;
+    text-decoration: none;
+    padding: 14.7vw;
+  }
+
+  .von a:hover
+  {
+    color:grey;
+  }
+
+  .von a:active
+  {
+    color: white;
+  }
