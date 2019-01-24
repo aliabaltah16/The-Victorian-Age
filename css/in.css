@@ -1,21 +1,20 @@
-body
-{
-   margin: 0;
-   padding: 0;
-   style: none;
-   background: white;
-}
+*{
+  margin:0;
+  padding:0;
+ }
 
 Ul{
   margin: 0px;
   padding:0px;
   list-style: none;
+  height: 15vh;
+  width: 100vw;
 }
 ul li{
   float: left;
   width: 200px;
   height: 40px;
-  background-color: white;
+  background-color: none;
   opacity: .8;
   line-height: 40px;
   text-align: center;
