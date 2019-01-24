@@ -24,8 +24,8 @@ ul li{
 }
 ul li a {
   text-decoration: none;
-  color: black;
-  display: block;
+  color: white;
+  display: line;
 }
 ul li a:hover {
   background-color: gray;
