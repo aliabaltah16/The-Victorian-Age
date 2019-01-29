@@ -29,3 +29,10 @@ ul li a {
 ul li a:hover {
   background-color: gray;
 }
+
+.f1
+{
+  margin: auto;
+  height: 100%;
+  max-width: 70vw;
+}
