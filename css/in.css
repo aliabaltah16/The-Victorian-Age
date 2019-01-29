@@ -30,9 +30,10 @@ ul li a:hover {
   background-color: gray;
 }
 
-.f1
+#f1
 {
   margin: auto;
   height: 100%;
   max-width: 70vw;
+  color: black;
 }
