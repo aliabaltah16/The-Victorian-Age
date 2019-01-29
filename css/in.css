@@ -30,6 +30,10 @@ ul li a:hover {
   background-color: gray;
 }
 
+body{
+  background: url(https://upload.wikimedia.org/wikipedia/commons/0/0b/Coronation_portrait_of_Queen_Victoria_-_Hayter_1838.jpg) no-repeat;
+  background-size: cover;
+   }
 #f1
 {
   margin: auto;
