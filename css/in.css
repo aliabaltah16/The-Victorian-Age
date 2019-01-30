@@ -15,7 +15,7 @@ ul li{
   width: 200px;
   height: 40px;
   background-color: #fff;
-  opacity: .8;
+  opacity: .2;
   line-height: 40px;
   text-align: center;
   font-size: 18px;
@@ -40,6 +40,6 @@ body{
   height: 100%;
   max-width: 70vw;
   background-color: #fff;
-  opacity: .8;
+  opacity: .2;
   display: block;
 }
