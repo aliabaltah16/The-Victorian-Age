@@ -23,7 +23,7 @@
  }
  ul li a {
    text-decoration: none;
-   color: #D4AF37;
+   color: black;
    display: block;
  }
  ul li a:hover {
@@ -40,7 +40,7 @@ body{
   height: 100%;
   max-width: 70vw;
   background-color: #fff;
-  opacity: .10;
+  opacity: .8;
   display: block;
 }
 
