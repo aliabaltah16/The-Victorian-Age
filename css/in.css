@@ -15,7 +15,7 @@ ul li{
   width: 200px;
   height: 40px;
   background-color: #fff;
-  opacity: .2;
+  opacity: .10;
   line-height: 40px;
   text-align: center;
   font-size: 18px;
@@ -40,7 +40,7 @@ body{
   height: 100%;
   max-width: 70vw;
   background-color: #fff;
-  opacity: .2;
+  opacity: .10;
   display: block;
 }
 
@@ -48,5 +48,5 @@ body{
 {
   max-width: 64vw;
   font-family: 'Merriweather', serif;
-  font-size: 18px; 
+  font-size: 18px;
 }
