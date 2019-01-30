@@ -43,3 +43,10 @@ body{
   opacity: .2;
   display: block;
 }
+
+#f1 p
+{
+  max-width: 64vw;
+  font-family: 'Merriweather', serif;
+  font-size: 18px; 
+}
