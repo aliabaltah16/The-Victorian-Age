@@ -10,22 +10,22 @@
 
 <body>
 
-  <h3> JavaScript Prompt </h3>
-  <button onclick="myFunction()"> Click it </button>
+  <button onclick="myFunction()">Try it</button>
+
   <p id="demo"></p>
+
   <script>
-  function myFunction(){
+  function myFunction() {
     var txt;
-    var person = prompt("Enter ur name:", "Luis Ricardo");
+    var person = prompt("Please enter your name:", "Luis Ricardo");
     if (person == null || person == "") {
       txt = "Naughty human being.";
     } else {
-      text = "Hello" + person + "! How ya doin fam?";
+      txt = "Hi " + person + "! How ya doin?";
+    }
+    document.getElementById("demo").innerHTML = txt;
   }
-  document.getElementById("demo").innerHTML = txt;
-}
   </script>
-
 
     <ul>
       <li><a href="index.html">Home</a></li>
