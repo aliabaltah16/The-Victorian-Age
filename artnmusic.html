@@ -4,8 +4,27 @@
     <link href="css/artnmusic.css" rel="stylesheet">
     <meta charset="utf-8">
     <title> Art and Music </title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+
   </head>
   <body>
+<h3> JavaScript Prompt </h3>
+<buttom onclick="myFuncrion()"> Try it </buttom>
+<p id="demo"></p>
+<script>
+function myFunction() {
+  var txt;
+  var person = prompt("Enter ur name:", "Jaun Carlos");
+  if (person == null || person == "") {
+    txt = "go to hell.";
+  } else {
+    text = "wasup" + person + "! How ya doin fam? Enjoy reading";
+}
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="woman.html">Roles of women</a></li>
