@@ -1,33 +1,133 @@
-*{
-  margin:0;
-  padding:0;
- }
+tml, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      box-shadow: 1px 1px 25px 10px
+}
 
-Ul{
-  margin: 0px;
-  padding:0px;
-  list-style: none;
-  height: 15vh;
-  width: 100vw;
+body {
+      font-family: 'Abril Fatface', cursive;
+      font-weight: lighter;
 }
-ul li{
-  float: left;
-  width: 200px;
-  height: 40px;
-  background-color: none;
-  opacity: .8;
-  line-height: 40px;
+
+header {
+      width: 100%;
+      height: 100vh;
+      background: url( ? ) no-repeat 50% 50%;
+      background-size: cover;
+}
+
+.content {
+      margin: 4em auto;
+      font-size: 20px;
+      line-height: 30px;
+      text-align: justify;
+      height: 100%;
+      max-width: 70vw;
+}
+
+
+nav {
+      position: fixed;
+      width: 100%;
+      line-height: 60px;
+}
+
+nav ul {
+      line-height: 60px;
+      list-style: none;
+      background: rgba(0, 0, 0, 0);
+      overflow: hidden;
+      color: #fff;
+      padding: 0;
+      text-align: right;
+      margin: 0;
+      padding-right: 40px;
+      transition: 1s;
+}
+
+nav.black ul {
+      background: #000;
+}
+
+nav ul li {
+      display: inline-block;
+      padding: 16px 40px;;
+}
+
+nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+}
+
+.menu-icon {
+      line-height: 60px;
+      width: 100%;
+      background: #000;
+      text-align: left;
+      box-sizing: border-box;
+      padding: 10px 19px;
+      cursor: pointer;
+      color: #fff;
+      display: none;
+      font-size: 14px;
+}
+
+@media(max-width: 786px) {
+
+      .logo {
+            position: fixed;
+            top: 0;
+            margin-top: 16px;
+      }
+
+      nav ul {
+            max-height: 0px;
+            background: #000;
+      }
+
+      nav.black ul {
+            background: #000;
+      }
+
+      .showing {
+            max-height: 34em;
+      }
+
+      nav ul li {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 24px;
+            text-align: center;
+      }
+
+      .menu-icon {
+            display: block;
+      }
+
+}
+
+
+.center
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   text-align: center;
-  font-size: 20px;
-  margin-right: 2px;
-}
-ul li a {
-  text-decoration: none;
-  color: black;
+  font-family: 'Times', sans-serif;
+  background-color: black;
+  opacity: .8;
   display: block;
 }
-ul li a:hover {
-  background-color: gray;
+
+h1
+{
+  text-align: center;
+  text-transform: uppercase;
+  color:#fff;
+  font-size: 3em;
 }
 
 p::first-letter {
