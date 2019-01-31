@@ -2,7 +2,6 @@ html, body {
       margin: 0;
       padding: 0;
       width: 100%;
-      box-shadow: 1px 1px 25px 10px
 }
 
 body {
@@ -98,17 +97,8 @@ nav ul li a {
 
 }
 
-
 p::first-letter {
   font-weight: bold;
   font-size:2em;
   color: red;
-}
-
-h3
-{
-  text-align: center;
-  text-transform: uppercase;
-  color:#fff;
-  font-size: 3em;
 }
