@@ -42,6 +42,28 @@
       <li><a href="reg.html">Religion & Superstition</a></li>
     </ul>
   </div>
+  <script type="text/javascript">
+
+                          // Menu-toggle button
+
+                          $(document).ready(function() {
+                          $(".menu-icon").on("click", function() {
+                          $("nav ul").toggleClass("showing");
+                          });
+                          });
+
+                          // Scrolling Effect
+
+                          $(window).on("scroll", function() {
+                          if($(window).scrollTop()) {
+                          $('nav').addClass('black');
+                          }
+
+                          else {
+                          $('nav').removeClass('black');
+                          }
+                          })
+ </script>
 
 <h3> Art and Music History </h3>
 <div ="header">
