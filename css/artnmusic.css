@@ -103,3 +103,11 @@ p::first-letter {
   font-size:2em;
   color: red;
 }
+
+h3
+{
+  text-align: center;
+  text-transform: uppercase;
+  color:#fff;
+  font-size: 3em;
+}
