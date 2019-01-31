@@ -109,27 +109,6 @@ nav ul li a {
 }
 
 
-.center
-{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  text-align: center;
-  font-family: 'Times', sans-serif;
-  background-color: black;
-  opacity: .8;
-  display: block;
-}
-
-h1
-{
-  text-align: center;
-  text-transform: uppercase;
-  color:#fff;
-  font-size: 3em;
-}
-
 p::first-letter {
   font-weight: bold;
   font-size:2em;
