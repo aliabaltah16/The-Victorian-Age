@@ -1,52 +1,140 @@
-*{
-  margin:0;
-  padding:0;
- }
-
-Ul{
-  margin: 0px;
-  padding:0px;
-  list-style: none;
-  height: 15vh;
-  width: 100vw;
+html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
 }
-ul li{
-  float: left;
-  width: 200px;
-  height: 40px;
-  background-color: #fff;
-  opacity: .8;
-  line-height: 40px;
+
+body {
+      font-family: 'Abril Fatface', cursive;
+      font-weight: lighter;
+}
+
+header {
+      width: 100%;
+      height: 100vh;
+      background: url(https://upload.wikimedia.org/wikipedia/commons/4/40/Coronation_of_Queen_Victoria_28_June_1838_by_Sir_George_Hayter.jpg) no-repeat 50% 50%;
+      background-size: cover;
+}
+
+.content {
+      margin: 4em auto;
+      font-size: 20px;
+      line-height: 30px;
+      text-align: justify;
+      height: 100%;
+      max-width: 70vw;
+}
+
+.logo {
+      line-height: 60px;
+      position: fixed;
+      float: left;
+      margin: 16px 46px;
+      color: #fff;
+      font-weight: bold;
+      font-size: 20px;
+      letter-spacing: 2px;
+}
+
+nav {
+      position: fixed;
+      width: 100%;
+      line-height: 60px;
+}
+
+nav ul {
+      line-height: 60px;
+      list-style: none;
+      background: rgba(0, 0, 0, 0);
+      overflow: hidden;
+      color: #fff;
+      padding: 0;
+      text-align: right;
+      margin: 0;
+      padding-right: 40px;
+      transition: 1s;
+}
+
+nav.black ul {
+      background: #000;
+}
+
+nav ul li {
+      display: inline-block;
+      padding: 16px 40px;;
+}
+
+nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+}
+
+.menu-icon {
+      line-height: 60px;
+      width: 100%;
+      background: #000;
+      text-align: left;
+      box-sizing: border-box;
+      padding: 10px 19px;
+      cursor: pointer;
+      color: #fff;
+      display: none;
+      font-size: 14px;
+}
+
+@media(max-width: 786px) {
+
+      .logo {
+            position: fixed;
+            top: 0;
+            margin-top: 16px;
+      }
+
+      nav ul {
+            max-height: 0px;
+            background: #000;
+      }
+
+      nav.black ul {
+            background: #000;
+      }
+
+      .showing {
+            max-height: 34em;
+      }
+
+      nav ul li {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 24px;
+            text-align: center;
+      }
+
+      .menu-icon {
+            display: block;
+      }
+
+}
+
+
+.center
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   text-align: center;
-  font-size: 20px;
-  margin-right: 2px;
-}
-ul li a {
-  text-decoration: none;
-  color: black;
-  display: block;
-}
-ul li a:hover {
-  background-color: gray;
-}
-
-body{
-  background: url(https://upload.wikimedia.org/wikipedia/commons/4/40/Coronation_of_Queen_Victoria_28_June_1838_by_Sir_George_Hayter.jpg) no-repeat center center fixed;
-  background-size: cover;
-   }
-#f1
-{
-  margin: auto;
-  height: 100%;
-  max-width: 70vw;
-  background-color: #fff;
+  font-family: 'Times', sans-serif;
+  background-color: black;
   opacity: .8;
   display: block;
 }
 
-#f1 p
+h1
 {
-  max-width: 64vw;
-  font-family: 'Merriweather', serif;
-  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color:#fff;
+  font-size: 3em;
 }
