@@ -1,4 +1,4 @@
-tml, body {
+html, body {
       margin: 0;
       padding: 0;
       width: 100%;
@@ -16,16 +16,6 @@ header {
       background: url( ? ) no-repeat 50% 50%;
       background-size: cover;
 }
-
-.content {
-      margin: 4em auto;
-      font-size: 20px;
-      line-height: 30px;
-      text-align: justify;
-      height: 100%;
-      max-width: 70vw;
-}
-
 
 nav {
       position: fixed;
@@ -113,4 +103,12 @@ p::first-letter {
   font-weight: bold;
   font-size:2em;
   color: red;
+}
+
+h3
+{
+  text-align: center;
+  text-transform: uppercase;
+  color:#fff;
+  font-size: 3em;
 }
