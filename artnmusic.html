@@ -10,28 +10,6 @@
 
 <body>
 
-  <button onclick="myFunction()">Try it</button>
-
-  <p id="demo"></p>
-
-
-<div id="js1">
-
-<script>
-  function myFunction() {
-    var txt;
-    var person = prompt("Please enter your name:", "Luis Ricardo");
-    if (person == null || person == "") {
-      txt = "Naughty human being.";
-    } else {
-
-    txt = "Hi " + person + "! How ya doin?";
-    }
-    document.getElementById("demo").innerHTML = txt;
-  }
-  </script>
-</div>
-
 <div class="wrapper">
   <header>
 <nav>
@@ -78,6 +56,28 @@
                           }
                           })
  </script>
+
+ <button onclick="myFunction()">Try it</button>
+
+ <p id="demo"></p>
+
+
+<div id="js1">
+
+<script>
+ function myFunction() {
+   var txt;
+   var person = prompt("Please enter your name:", "Luis Ricardo");
+   if (person == null || person == "") {
+     txt = "Naughty human being.";
+   } else {
+
+   txt = "Hi " + person + "! How ya doin?";
+   }
+   document.getElementById("demo").innerHTML = txt;
+ }
+ </script>
+</div>
 
 <h3> Art and Music History </h3>
 <div ="header">
