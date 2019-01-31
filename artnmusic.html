@@ -22,17 +22,18 @@
 <p> Ricardo </p>
 </div>
 
+
 h3> JavaScript Prompt </h3>
-<buttom onclick="myFuncrion()"> click it </buttom>
+<button onclick="myFunction()"> Click it </button>
 <p id="demo"></p>
 <script>
 function myFunction(){
   var txt;
   var person = prompt("Enter ur name:", "Jaun Carlos");
   if (person == null || person == "") {
-    txt = "go to hell.";
+    txt = "Good fam.";
   } else {
-    text = "wasup" + person + "! How ya doin fam? Enjoy reading";
+    text = "wasup" + person + " How ya doin fam? Enjoy reading";
 }
   document.getElementById("demo").innerHTML = txt;
 }
