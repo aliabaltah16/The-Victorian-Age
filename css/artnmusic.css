@@ -17,6 +17,15 @@ header {
       background-size: cover;
 }
 
+.content {
+      margin: 4em auto;
+      font-size: 20px;
+      line-height: 30px;
+      text-align: justify;
+      height: 100%;
+      max-width: 70vw;
+}
+
 nav {
       position: fixed;
       width: 100%;
