@@ -7,7 +7,24 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
 
   </head>
-  <body>
+
+<body>
+  <h3> JavaScript Prompt </h3>
+  <button onclick="myFunction()"> Click it </button>
+  <p id="demo"></p>
+  <script>
+  function myFunction(){
+    var txt;
+    var person = prompt("Enter ur name:", "Jaun Carlos");
+    if (person == null || person == "") {
+      txt = "Good fam.";
+    } else {
+      text = "wasup" + person + " How ya doin fam? Enjoy reading";
+  }
+    document.getElementById("demo").innerHTML = txt;
+  }
+  </script>
+
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="woman.html">Roles of women</a></li>
@@ -22,20 +39,5 @@
 <p> Ricardo </p>
 </div>
 
-h3> JavaScript Prompt </h3>
-<buttom onclick="myFuncrion()"> click it </buttom>
-<p id="demo"></p>
-<script>
-function myFunction(){
-  var txt;
-  var person = prompt("Enter ur name:", "Jaun Carlos");
-  if (person == null || person == "") {
-    txt = "go to hell.";
-  } else {
-    text = "wasup" + person + "! How ya doin fam? Enjoy reading";
-}
-  document.getElementById("demo").innerHTML = txt;
-}
-</script>
 </body>
 </html>
