@@ -73,7 +73,8 @@ nav ul li a {
       font-size: 14px;
 }
 
-@media(max-width: 786px) {
+@media(max-width: 786px)
+      {
 
       .logo {
             position: fixed;
