@@ -4,10 +4,20 @@
     <link href="css/in.css" rel="stylesheet">
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/women.css">
+
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
     <!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
     <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <!-- Fixing the menu -->
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <!-- Copy a document -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script>
+    $.get("txt/women.txt", function(data){
+      document.getElementById("women").innerHTML = data;
+    });
+  </script>
+
     <title>The victorian age </title>
   </head>
   <body>
@@ -37,13 +47,7 @@
 
     <div class="content">
       <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-        </p>
-
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-        </p>
+      <p id = "women"></P>
     </div>
 
   </div>
