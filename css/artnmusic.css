@@ -20,6 +20,7 @@ body {
   color: white;
   border: none;
   cursor: pointer;
+  display: none;
 }
 
 header {

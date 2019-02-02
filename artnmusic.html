@@ -131,7 +131,14 @@ These are three popular songs according to “Victorian-era.org”, during the V
 
 $(document).ready(function(){
 
-  $(window)
+  $(window).scroll(function){
+    if($(this).scrollTop() > 40){
+      $('#Topbotton').fadeIn();
+    } else {
+      $('#Topbotton').fadeOut();
+    }
+  });
+
   $("#Topbotton").click(function(){
     $('html ,body').animate({scrollTop :0},800);
   });
