@@ -1,6 +1,8 @@
 *{
   margin:0;
   padding:0;
+  background:url(https://upload.wikimedia.org/wikipedia/commons/c/c8/SS_Victoria_of_the_Alaska_Steamship_Company.jpg);
+  background-size:auto;
  }
 
 Ul{
@@ -28,4 +30,22 @@ ul li a {
 }
 ul li a:hover {
   background-color: gray;
+}
+
+#sidebar1{
+  width: 20vw;
+  height: 84vh;
+  float: left;
+  opacity: .2;
+}
+
+#sidebar2{
+  width: 20vw;
+  height: 84vh;
+  float: right;
+  opacity: .1;
+}
+
+#content{
+
 }
