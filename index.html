@@ -5,74 +5,72 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/in.css">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    <!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <title>The victorian age </title>
   </head>
   <body>
-    <div class="wrapper">
-           <header>
 
-                 <nav>
+<div class="wrapper">
+ <header>
+  <nav>
+    <div class="menu-icon">
+      <i class="fa fa-bars fa-2x"></i>
+   </div>
 
-                       <div class="menu-icon">
-                             <i class="fa fa-bars fa-2x"></i>
-                       </div>
+   <div class="menu">
+      <ul>
+       <li><a href="index.html">Home</a></li>
+       <li><a href="woman.html">Roles of women</a></li>
+       <li><a href="economy.html">Economy</a></li>
+       <li><a href="teck.html">Technology & Science</a></li>
+       <li><a href="artnmusic.html"> Art & music</a></li>
+       <li><a href="reg.html">Religion & Superstition</a></li>
+      </ul>
+  </div>
+  </nav>
 
-            <div class="menu">
+  <div class="center">
+    <h1>  The Victorian Era </h1>
+  </div>
+  </header>
 
-                        <ul>
-                         <li><a href="index.html">Home</a></li>
-                         <li><a href="woman.html">Roles of women</a></li>
-                         <li><a href="economy.html">Economy</a></li>
-                         <li><a href="teck.html">Technology & Science</a></li>
-                         <li><a href="artnmusic.html"> Art & music</a></li>
-                         <li><a href="reg.html">Religion & Superstition</a></li>
-                        </ul>
-              </div>
+    <div class="content">
+      <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+      <p id = "#"></P>
+      </div>
 
-               </nav>
-                        <div class="center">
-                            <h1>  The Victorian Era </h1>
+    </div>
 
-                        </div>
-
-
-                    </header>
-                    <body>
-                      <div class="content">
-                          <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                         </p>
-                         <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                        </p>
-                        </div>
-                        </div>
-
-                    <script type="text/javascript">
-
-                                            // Menu-toggle button
-
-                                            $(document).ready(function() {
-                                            $(".menu-icon").on("click", function() {
-                                            $("nav ul").toggleClass("showing");
-                                            });
-                                            });
-
-                                            // Scrolling Effect
-
-                                            $(window).on("scroll", function() {
-                                            if($(window).scrollTop()) {
-                                            $('nav').addClass('black');
+        <script type="text/javascript">
+        // Menu-toggle button
+            $(document).ready(function() {
+              $(".menu-icon").on("click", function() {
+                $("nav ul").toggleClass("showing");
+                                                    });
+                                                    });
+        // Scrolling Effect
+           $(window).on("scroll", function() {
+              if($(window).scrollTop()) {
+                 $('nav').addClass('black');
                                             }
-
-                                            else {
-                                            $('nav').removeClass('black');
-                                            }
+              else {
+                 $('nav').removeClass('black');}
                                             })
+        </script>
+        <script type="text/javascript">
+          // ===== Scroll to Top ====
+            $(window).scroll(function() {
+              if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+                   $('#return-to-top').fadeIn(200);}    // Fade in the arrow
+               else {
+                 $('#return-to-top').fadeOut(200);}   // Else fade out the arrow
+                                   });
+                 $('#return-to-top').click(function() {      // When arrow is clicked
+                  $('body,html').animate({ scrollTop : 0 }, 500);   // Scroll to top of body
+           });
 
-
-                     </script>
-
-                    </body>
-                </html>
+          </script>
+  </body>
+</html>

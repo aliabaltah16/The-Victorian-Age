@@ -5,26 +5,22 @@
     <meta charset="utf-8">
     <title> Art and Music </title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+
+<script language="javascript" type="text/javascript">
+alert("Run while you can") </script>
 
   </head>
 
 <body>
-  <h3> JavaScript Prompt </h3>
-  <button onclick="myFunction()"> Click it </button>
-  <p id="demo"></p>
-  <script>
-  function myFunction(){
-    var txt;
-    var person = prompt("Enter ur name:", "Jaun Carlos");
-    if (person == null || person == "") {
-      txt = "Good fam.";
-    } else {
-      text = "wasup" + person + " How ya doin fam? Enjoy reading";
-  }
-    document.getElementById("demo").innerHTML = txt;
-  }
-  </script>
 
+<div class="wrapper">
+  <header>
+<nav>
+      <div class="menu-icon">
+            <i class="fa fa-bars fa-2x"></i>
+      </div>
+<div class="menu">
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="woman.html">Roles of women</a></li>
@@ -33,11 +29,122 @@
       <li><a href="artnmusic.html"> Art & music</a></li>
       <li><a href="reg.html">Religion & Superstition</a></li>
     </ul>
+  </div>
+</nav>
 
-<h3> Art and Music History </h3>
-<div ="header">
-<p> Ricardo </p>
+  <div class="center">
+      <h1>  Art and Music  </h1>
+  </div>
+
+</header>
+
+  <script type="text/javascript">
+
+                          // Menu-toggle button
+
+                          $(document).ready(function() {
+                          $(".menu-icon").on("click", function() {
+                          $("nav ul").toggleClass("showing");
+                          });
+                          });
+
+                          // Scrolling Effect
+
+                          $(window).on("scroll", function() {
+                          if($(window).scrollTop()) {
+                          $('nav').addClass('black');
+                          }
+
+                          else {
+                          $('nav').removeClass('black');
+                          }
+                          })
+ </script>
+
+
+<div class="content">
+
+  <button onclick="myFunction()">Try it</button>
+
+  <p id="demo"></p>
+
+  <script>
+  function myFunction() {
+    var txt;
+    var person = prompt("Please enter your name:", "Luis Ricardo");
+    if (person == null || person == "") {
+      txt = "Naughty human being.";
+    } else {
+
+    txt = "Hi " + person + "! Enjoy reading";
+    }
+    document.getElementById("demo").innerHTML = txt;
+  }
+  </script>
+
+<br>
+
+  <h4> “Art and Music” during the Victorian Age.</h4>
+
+  <h5> Translate this page </h5>
+
+  <div id="google_translate_element"> </div>
+
+  <script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+  }
+  </script>
+
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+  <p> This individual article will focus on the significance of art and music during Queen Victoria’s reign. </p><br>
+
+  <p> During Queen Victoria’s reign there was an industrial development, resulting in many changes which made the UK take a step in to something greater.<br>
+  <br>
+  Industrial age lead to more accuracy and attention to details. The generation that grew up during the industrial age believed that arts is meant to reflect the world were living in. Instead of idealizing it. That’s why the Victorian age is known as the age of realism and it’s well-known for its distinctive style.<br>
+  <br>
+  According to the website “Victorian-era.org”. During this century the main themes of painting were nobility, military, historical scenes and nature. It describes it as the time when a wealthy middle class emerged and changed the art market.<br>
+  <br>
+   Pre-Raphaelite Brotherhood lived a short life but their ideas was extremely influential according to “Victorian-era.org” . They felt that the role of artist was to tell moral stories.<br>
+  <br>
+  The Victorian age significance was well know. The art during queen Victoria’s reign was represent as the most vibrant colors of England’s society it was inspired by the expansion of British Empire. </p>
+
+  <p> By the 1850s there was a change when it came to music. People enjoyed old traditional folk songs, but that changed for a few and they added more humorous lyrics. The Piano was being heard a lot during this century, it started to become available in almost all orchestras. <br>
+    <br>
+    The orchestras had frequently unruly crowds attending them. The artist must had an abnormal ability to hold the crowd’s attention otherwise it would be lame. Many people was stuck in to the songs called “Golden Slippers and Old Folks at Home”, written by Stephen Foster. A popular artist of the Victorian age. <br>
+    <br>
+    Songs started to become exclusively popular on the 1870s, with certain singers. According to my source “Victorian-era.org”, it informs that people started to have contracts. The original songwriter was permitted to play his music without permission. This was a bright step in to something better. <br>
+    <br>
+     -	“Throw Out the Life-line! (Lyrics and music by the Rev. Edwin Ufford) <br>
+     -	Annabelle Lee – A Victorian setting of poe’s poem (by Henry Leslie) <br>
+     -	Home, Sweet Home! (Lyrics by John Howard Payne, music by Henry Rowley Bishop)” <br>
+<br>
+These are three popular songs according to “Victorian-era.org”, during the Victorian age. </p>
+
 </div>
+
+<button id="Topbotton"><i class="fas fa-long-arrow-alt-up"></i></button>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+  $(window).scroll(function){
+    if($(this).scrollTop() > 40){
+      $('#Topbotton').fadeIn();
+    } else {
+      $('#Topbotton').fadeOut();
+    }
+  });
+
+  $("#Topbotton").click(function(){
+    $('html ,body').animate({scrollTop :0},800);
+  });
+});
+</script>
+
 
 </body>
 </html>
