@@ -170,7 +170,7 @@ h1
   font-size: 3em;
 }
 
-#sources-button{
+.sources-button{
 	padding: 10px;
 	user-select: none;
 	cursor: pointer;
@@ -180,7 +180,7 @@ h1
 	border: 2px solid #444;
 }
 
-#sources{
+.sources{
 	margin: 15px 5px 5px 15px;
 	padding: 2px
 }
