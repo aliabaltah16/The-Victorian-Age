@@ -11,6 +11,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <!-- Copy a document -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="sors.js"></script>
      <script>
     $.get("txt/eco.txt", function(data){
       document.getElementById("eco").innerHTML = data;
@@ -48,6 +50,7 @@
       <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
       <p id = "eco"></P>
 
+      <div id="sources-container">
 			<a id="sources-button">View sources & authors</a>
 			<ul id="sources">
 				<br>
@@ -58,6 +61,7 @@
 				<p>Written by Max</p>
 			</ul>
     </div>
+  </div>
 
   </div>
 
