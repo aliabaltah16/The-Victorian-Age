@@ -39,6 +39,14 @@
     <div class="content">
       <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
       <p id = "#"></P>
+        <div class="sources-container">
+        <a class="sources-button">View sources</a>
+        <ul class="sources">
+          <br>
+          <p>Written by</p>
+          <a> </a><br>
+        </ul>
+      </div>
       </div>
 
     </div>
@@ -72,5 +80,18 @@
            });
 
           </script>
+
+          <script type="text/javascript">
+                function main() {
+                 $('.sources').hide();
+                 $('.sources-button').on('click', function() {
+                  $(this).next().slideToggle(400);
+                  $(this).toggleClass('active');
+                  $(this).text('Sources');
+                                 });
+                                 }
+                $(document).ready(main);
+        </script>
+
   </body>
 </html>
