@@ -6,6 +6,7 @@
     <title> Art and Music </title>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
 <!-- Copy a document -->
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
  <script>
 $.get("txt/artnmusic.txt", function(data){
@@ -70,7 +71,18 @@ alert("Run while you can") </script>
 
 
 <div class="content">
-      <p id = "artnmusic"></P>
+    <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+    <p id = "artnmusic"></P>
+      <div class="sources-container">
+      <a class="sources-button">View sources</a>
+      <ul class="sources">
+        <br>
+        <p>Written by Max</p>
+        <a> </a><br>
+        <a>https://www.so-rummet.se/kategorier/historia/det-langa-1800-talet/industriella-revolutionen#</a><br>
+        <a>http://www.bbc.co.uk/history/british/victorians/overview_victorians_01.shtml </a>
+      </ul>
+    </div>
   </div>
 
   <button onclick="myFunction()">Try it</button>
@@ -135,6 +147,17 @@ $(document).ready(function(){
 });
 </script>
 
+<script type="text/javascript">
+      function main() {
+       $('.sources').hide();
+       $('.sources-button').on('click', function() {
+        $(this).next().slideToggle(400);
+        $(this).toggleClass('active');
+        $(this).text('Sources');
+                       });
+                       }
+      $(document).ready(main);
+</script>
 
 </body>
 </html>
