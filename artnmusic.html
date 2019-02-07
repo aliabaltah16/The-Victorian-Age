@@ -1,141 +1,110 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link href="css/artnmusic.css" rel="stylesheet">
     <meta charset="utf-8">
-    <title> Art and Music </title>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
-<!-- Copy a document -->
+    <link rel="stylesheet" type="text/css" href="css/artnmusic.css">
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
- <script>
-$.get("txt/artnmusic.txt", function(data){
-  document.getElementById("artnmusic").innerHTML = data;
-});
-</script>
-<!-- IDEA:
-<script language="javascript" type="text/javascript">
-alert("Run while you can") </script>-->
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    <!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <!-- Fixing the menu -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <!-- Copy a document -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script>
+    $.get("txt/artnmusic.txt", function(data){
+      document.getElementById("women").innerHTML = data;
+    });
+  </script>
 
+    <title>The victorian age </title>
   </head>
-
-<body>
-
-<div class="wrapper">
-  <header>
-<nav>
-      <div class="menu-icon">
+  <body>
+    <div class="wrapper">
+      <header>
+        <nav>
+          <div class="menu-icon">
             <i class="fa fa-bars fa-2x"></i>
+          </div>
+
+          <div class="menu">
+           <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="woman.html">Roles of women</a></li>
+             <li><a href="economy.html">Economy</a></li>
+             <li><a href="teck.html">Technology & Science</a></li>
+             <li><a href="artnmusic.html"> Art & music</a></li>
+             <li><a href="reg.html">Religion & Superstition</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="center">
+          <h1> Art and Music  </h1>
+        </div>
+     </header>
+
+    <div class="content">
+      <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+      <p id = "artnmusic"></P>
+
+        <div class="sources-container">
+        <a class="sources-button">View sources</a>
+        <ul class="sources">
+          <br>
+          <p>Written by  </p>
+            <a> </a><br>
+            <a> </a><br>
+            <a> </a><br>
+        </ul>
       </div>
-<div class="menu">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="woman.html">Roles of women</a></li>
-      <li><a href="economy.html">Economy</a></li>
-      <li><a href="teck.html">Technology & Science</a></li>
-      <li><a href="artnmusic.html"> Art & music</a></li>
-      <li><a href="reg.html">Religion & Superstition</a></li>
-    </ul>
-  </div>
-</nav>
 
-  <div class="center">
-      <h1>  Art and Music  </h1>
-  </div>
-
-</header>
-
-
-  <script type="text/javascript">
-
-                          // Menu-toggle button
-
-                          $(document).ready(function() {
-                          $(".menu-icon").on("click", function() {
-                          $("nav ul").toggleClass("showing");
-                          });
-                          });
-
-                          // Scrolling Effect
-
-                          $(window).on("scroll", function() {
-                          if($(window).scrollTop()) {
-                          $('nav').addClass('black');
-                          }
-
-                          else {
-                          $('nav').removeClass('black');
-                          }
-                          })
- </script>
-
-
-<div class="content">
-  <!-- IDEA:    <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>-->
-    <p id = "artnmusic"></P>
-      <div class="sources-container">
-      <a class="sources-button">View sources</a>
-      <ul class="sources">
-        <br>
-        <p> Juan </p>
-        <a> </a><br>
-        <a>https://www.so-rummet.se/kategorier/historia/det-langa-1800-talet/industriella-revolutionen#</a><br>
-        <a>http://www.bbc.co.uk/history/british/victorians/overview_victorians_01.shtml </a>
-      </ul>
     </div>
+
   </div>
-<!-- IDEA:
-  <button onclick="myFunction()">Try it</button>
 
-  <p id="demo"></p>
+    <script type="text/javascript">
+        // Menu-toggle button
+        $(document).ready(function() {
+          $(".menu-icon").on("click", function() {
+            $("nav ul").toggleClass("showing");});
+                                            });
+       // Scrolling Effect
+       $(window).on("scroll", function() {
+          if($(window).scrollTop()) {
+              $('nav').addClass('black');}
 
-  <script>
-  function myFunction() {
-    var txt;
-    var person = prompt("Please enter your name:", "Luis Ricardo");
-    if (person == null || person == "") {
-      txt = "Naughty human being.";
-    } else {
+          else {
+            $('nav').removeClass('black');}
+            })
+    </script>
 
-    txt = "Hi " + person + "! Enjoy reading";
-    }
-    document.getElementById("demo").innerHTML = txt;
-  }
-  </script>
- -->
-<br>
+    <script type="text/javascript">
+      // ===== Scroll to Top ====
+        $(window).scroll(function() {
+          if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+               $('#return-to-top').fadeIn(200);}    // Fade in the arrow
+           else {
+             $('#return-to-top').fadeOut(200);}   // Else fade out the arrow
+                               });
+             $('#return-to-top').click(function() {      // When arrow is clicked
+              $('body,html').animate({ scrollTop : 0 }, 500);   // Scroll to top of body
+       });
 
-  <h4> “Art and Music” during the Victorian Age.</h4>
+      </script>
 
-  <h5> Translate this page </h5>
+      <script type="text/javascript">
+            function main() {
+             $('.sources').hide();
+             $('.sources-button').on('click', function() {
+              $(this).next().slideToggle(400);
+              $(this).toggleClass('active');
+              $(this).text('Sources');
+                             });
+                             }
+            $(document).ready(main);
+    </script>
 
-  <div id="google_translate_element"> </div>
+ </body>
 
-  <script type="text/javascript">
-  function googleTranslateElementInit() {
-    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-  }
-  </script>
-
-  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-
-
-</div>
-
-</script>
-
-<script type="text/javascript">
-      function main() {
-       $('.sources').hide();
-       $('.sources-button').on('click', function() {
-        $(this).next().slideToggle(400);
-        $(this).toggleClass('active');
-        $(this).text('Sources');
-                       });
-                       }
-      $(document).ready(main);
-</script>
-
-</body>
 </html>
