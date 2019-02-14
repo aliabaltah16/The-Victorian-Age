@@ -142,7 +142,7 @@ nav ul li a {
     transition: all 0.3s ease;
 }
 #return-to-top:hover {
-    background-color: orange;
+    background-color: rgba(0, 0, 0, 0.9);
 }
 #return-to-top:hover i {
     color: #fff;
@@ -178,7 +178,6 @@ h1
 	margin: 10px;
 	box-sizing: border-box;
 	border: 2px solid #444;
-  background-color: orange;
 }
 
 .sources{
