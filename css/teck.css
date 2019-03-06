@@ -27,7 +27,7 @@ header {
 
 
 nav {
-      position: absolute;
+      position: fixed;
       width: 100%;
       line-height: 60px;
 }
